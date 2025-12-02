@@ -10,7 +10,7 @@ L'obiettivo di questa esercitazione è la creazione di tabelle semplici all'inte
 # Istruzioni
 Scrivere un file SQL che:
 1. Crea una tabella 'corsisti' con i seguenti campi:
-    - id (int, auto-incremento, chiave primaria),
+    - id (int, auto-increment, chiave primaria),
     - nome (massimo 50 caratteri, obbligatorio),
     - cognome (massimo 50 caratteri, obbligatorio),
     - data_nascita (data, obbligatorio),

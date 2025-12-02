@@ -1,1 +1,1 @@
-CREATE database gestione_corsi;
+    CREATE database gestione_corsi;

@@ -23,3 +23,31 @@ INSERT INTO `iscrizioni` (`corsista_id`, `modulo_id`) VALUES
 (4, 5), -- Andrea - Sviluppo Frontend
 (5, 3), -- Sara - Programmazione Web Base
 (5, 4); -- Sara - Gestione Progetto
+
+AGGIUNGERE costo_orario alla tabella moduli
+
+--1. considerando che nella tabella moduli c'è il campo numero_ore e che le lezioni durano 3 ore potresti fare apparire
+-- il nome e a fianco il numero_lezioni
+
+
+
+
+--2. considerando che sono concesse al massimo il 20% di assenze sul totale delle ore del modulo
+-- potresti aggiungere alla query precedente (nome del modulo + numero_lezioni) il campo max_ore_assenza
+
+
+
+
+
+
+
+
+
+
+
+
+SELECT nome, CEIL(numero_ore / 3) AS numero_lezioni FROM moduli;
+
+SELECT nome, CEIL(numero_ore / 3) AS numero_lezioni,
+FLOOR((numero_ore * 20) / 100) AS max_ore_assenza
+FROM moduli;

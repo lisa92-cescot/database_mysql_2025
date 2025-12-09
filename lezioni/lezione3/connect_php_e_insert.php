@@ -8,7 +8,7 @@
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "Connessione al database avvenuta con successo!";
     } catch (PDOException $e) {
-        die("Errore di connessione: " . $e->getMessage());
+        echo "Errore di connessione: " . $e->getMessage();
     }
     // Esempio di inserimento dati
     try {   
